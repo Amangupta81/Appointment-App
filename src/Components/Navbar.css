@@ -1,0 +1,87 @@
+/* Reset and styling for body */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Navbar styling */
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 40px;
+    background-color: #111; /* Dodger Blue */
+  }
+  
+  /* Navbar logo section */
+  .navbar-logo h1 {
+    margin: 0;
+    color: white;
+    font-size: 1.8rem;
+    text-shadow: 0 0 2px #00ff00, 0 0 5px #00ff00, 0 0 8px #00ff00;
+    
+  }
+  
+  /* Navigation container for links and the button */
+  .nav-container {
+    display: flex;
+    align-items: center;
+    gap: 25px; /* Add more spacing between links and button */
+  }
+  
+  /* Links styling */
+  .navbar-links {
+    list-style: none;
+    display: flex;
+    gap: 20px; /* Increased gap between links */
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navbar-links a {
+    text-decoration: none;
+    color: rgb(244, 238, 238); /* Light color */
+    font-weight: 600;
+    font-size: 1.2rem; /* Increased font size for links */
+  }
+  .signup-button {background-image: linear-gradient(to right, #00c6ff 0%, #0072ff  51%, #00c6ff  100%)}
+  .signup-button {
+     margin: 10px;
+     padding: 12px 25px;
+     text-align: center;
+     text-transform: uppercase;
+     transition: 0.5s;
+     background-size: 200% auto;
+     border-radius: 20px;
+     color: white;            
+     box-shadow: 0 0 20px #eee;
+     border-radius: 10px;
+     font-size: 1.1rem;
+     display: inline-block;
+   }
+  .signup-button:hover {
+    background-position: right center; /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+  }
+  /* Responsive behavior */
+  @media (max-width: 600px) {
+    .navbar {
+      flex-direction: column;
+    }
+  
+    .nav-container {
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+    }
+  
+    .navbar-links {
+      flex-direction: column;
+    }
+  
+    .signup-button {
+      margin-top: 10px;
+    }
+  }
+  

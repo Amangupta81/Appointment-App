@@ -1,0 +1,80 @@
+/* Header */
+h1 {
+  text-align: center;
+  color: #4f5f76;
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Row Layout */
+.row {
+  margin-bottom: 1.5rem;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Table Styling */
+#list {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  margin-top: 1rem;
+  animation: fadeIn 0.5s ease;
+  border: 2px solid black;
+}
+
+#list td,
+#list th {
+  border: 1px solid black;
+  padding: 12px;
+}
+
+#list tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+#list tr:hover {
+  background-color: #ddd;
+}
+
+#list th {
+  padding: 12px 0;
+  text-align: center;
+  background-color: #0288d1;
+  color: white;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  0% {
+      opacity: 0;
+      transform: translateY(-20px);
+  }
+  100% {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+  .container {
+      width: 90%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .col-25, .col-75, input[type="submit"] {
+      width: 100%;
+      margin-top: 0;
+  }
+
+  h1 {
+      font-size: 2rem;
+  }
+}

@@ -1,0 +1,157 @@
+/* Full-Screen Background Styling */
+.login-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: url('log.png') no-repeat center center fixed; /* Replace with your image path */
+    background-size: cover;
+    padding: 20px;
+}
+
+/* Form Styles */
+.form-login {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background: linear-gradient(to top, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.5) 50%, rgba(255, 255, 255, 0) 100%);
+ /* Semi-transparent white background */
+    padding: 40px;
+    max-width: 400px;
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+h1.login {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #000000; /* Dodger Blue */
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Placeholder Style */
+::placeholder {
+    font-family: inherit;
+    font-size: 14px;
+    color: #888;
+}
+
+/* Input Label Styling */
+.flex-column > label {
+    color: #333;
+    font-weight: 600;
+}
+
+/* Input and Icon Styling */
+.inputForm {
+    display: flex;
+    align-items: center;
+    border: 1.5px solid #000000;
+    border-radius: 10px;
+    height: 50px;
+    padding: 0 10px;
+    transition: border-color 0.3s ease-in-out;
+}
+
+.inputForm svg {
+    fill: #888;
+    margin-right: 10px;
+}
+
+.input {
+    flex-grow: 1;
+    margin-left: 10px;
+    border: none;
+    height: 100%;
+    border-radius: 10px;
+    font-size: 15px;
+    background: transparent;
+    color: #333;
+}
+
+.input:focus {
+    outline: none;
+}
+
+.inputForm:focus-within {
+    border-color: #2d79f3;
+}
+
+/* Checkbox and Forgot Password */
+.flex-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 14px;
+}
+
+.flex-row > div > label {
+    font-size: 14px;
+    color: #333;
+    font-weight: 500;
+}
+
+.span {
+    color: #2d79f3;
+    font-weight: 500;
+    cursor: pointer;
+    transition: color 0.2s ease-in-out;
+}
+
+.span:hover {
+    color: #1E90FF;
+}
+
+/* Submit Button Styling */
+.button-submit {
+    background-color: #151717;
+    border: none;
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 10px;
+    height: 50px;
+    width: 100%;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, transform 0.2s ease;
+}
+
+.button-submit:hover {
+    background-color: #252727;
+    transform: scale(1.03);
+}
+
+/* Text and Line Styling */
+.p {
+    text-align: center;
+    color: #333;
+    font-size: 14px;
+    margin: 5px 0;
+}
+
+.line {
+    margin: 10px 0;
+    color: #777;
+    text-align: center;
+    position: relative;
+}
+
+.line::before,
+.line::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    width: 40%;
+    height: 1px;
+    background-color: #ddd;
+}
+
+.line::before {
+    left: 0;
+}
+
+.line::after {
+    right: 0;
+}

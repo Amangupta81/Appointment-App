@@ -1,0 +1,141 @@
+
+.container-admin {
+    width: 55%;
+    margin: 1rem auto;
+    padding: 40px;
+    background: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.col-25 {
+    width: 25%;
+    text-align: right;
+    padding-right: 10px;
+    font-weight: bold;
+    color: #555;
+}
+
+.col-75 {
+    width: 75%;
+}
+
+input[type="date"],
+input[type="time"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.button-admin {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.button-admin button {
+    background-color: #007bff;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.button-admin button:hover {
+    background-color: #0056b3;
+}
+
+h3 {
+    color: #333;
+    text-align: center;
+}
+
+ul.admin-ui {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul.admin-ui li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f8f9fa;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+ul.admin-ui li:hover {
+    background-color: #e9ecef;
+}
+
+.delete-button {
+    background-color: #d0314c;
+    color: white;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+.delete-button:hover {
+    background-color: #a6263a;
+}
+
+@media screen and (max-width: 768px) {
+    .container-admin {
+        width: 90%;
+    }
+
+    .row {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .col-25, .col-75 {
+        width: 100%;
+        text-align: left;
+    }
+
+    .col-25 {
+        margin-bottom: 10px;
+    }
+}
