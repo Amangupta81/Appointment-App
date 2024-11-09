@@ -1,4 +1,5 @@
 import React, { useEffect, useRef } from 'react';
+import { Link } from 'react-router-dom';
 import './Home.css';
 import Image1 from './image1.jpg'
 import Image2 from './image2.png'
@@ -34,7 +35,7 @@ const Home = () => {
         <p className="hero-description">
           Schedule and manage your appointments seamlessly. Our system is designed to help you stay organized and on time.
         </p>
-        <a href="/login" className="cta-button">Get Started</a>
+        <Link to="/login" className="cta-button">Get Started</Link>
       </div>
 
       {/* Image Section */}
